@@ -1,0 +1,220 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+.form-text-result-invalid {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545
+}
+
+.form-text-result-valid {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color:#28a745
+}
+
+
+h1.registrarion {
+    margin-bottom: 20px;
+}
+
+h1.login {
+    margin-bottom: 35px;
+}
+
+h1.buy {
+    margin-bottom: 35px;
+}
+
+h1.sell {
+    margin-bottom: 30px;
+}
+
+h1.history {
+    margin-bottom: 35px;
+}
+
+h1.charge {
+    margin-bottom: 35px;
+}
+
+h1.portfolio {
+    margin-bottom: 35px;
+}
+
+h1.quote {
+    margin-bottom: 30px;
+}
+
+h1.quoted {
+    margin-bottom: 35px;
+}
+
+#username {
+    margin-right: 10px;
+    font-family: "Lucida Grande";
+    color: #DF691A;
+}
+
+form.login {
+  display: inline-block;
+  width: auto;
+  outline: 0;
+  height: 36px;
+  margin: 0 auto;
+}
+
+form > label {
+    font-size: 1.1rem;
+}
+
+form.login > input[type="text"] {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 5px;
+}
+
+form.login > input[type="password"] {
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 15px;
+}
+
+div.login {
+    background-color: #fff;
+    border-radius: .25rem;
+    box-shadow: 0 1px 0 rgba(0,0,0,.25);
+    padding: 2rem 2rem 1rem;
+    margin: 0 auto 2rem;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+ul.errorlist.nonfield{
+    list-style-type: none;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 0 0 0 0;
+    color: #7d2213;
+
+}
+
+form.register {
+  display: inline-block;
+  width: auto;
+  outline: 0;
+  height: 36px;
+  margin: 0 auto;
+}
+
+form > label {
+    font-size: 1.1rem;
+}
+
+span.helptext {
+    font-size: 1.1rem;
+}
+
+form.register > input[type="text"] {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 5px;
+}
+
+form.register > input[type="email"] {
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 15px;
+}
+
+form.register > input[type="password"] {
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 15px;
+}
+
+
+

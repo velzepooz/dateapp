@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Вход{% endblock %}
+
+{% block main %}
+  <div class="login">
+  <h1 style="font-size: 45px">Вход</h1>
+  <p style="font-size: 16px">введите логин/пароль:</p>
+    {% load crispy_forms_tags %}
+  <form action="." method="POST" class="login">
+    {{ form | crispy }}
+    {% csrf_token %}
+    <button style="width:120px; height:40px;
+     margin-bottom: 10px; font-size: 18px" type="submit" class="btn btn-success">Войти</button>
+  </form>
+<p style="margin-top: 15px; font-size: 1.1rem"><a href="{% url "accounts:password_reset" %}">Забыли пароль?</a></p>
+  </div>
+{% endblock %}

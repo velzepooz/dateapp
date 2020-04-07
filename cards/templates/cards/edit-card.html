@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Изменить карточку{% endblock %}
+
+{% block main %}
+  <h1>Изменить карточку</h1>
+{% load crispy_forms_tags %}
+  <form action="{% url "cards:edit-card" card.pk %}" method="post">
+{% csrf_token %}
+{{ form | crispy }}
+    <button type="submit" class="btn btn-success">Сохранить</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Cards{% endblock %}
+{% block main %}
+  <h1 style="margin-bottom: 40px">Карточки</h1>
+<div class="row">
+{% for card in cards.values %}
+
+<div class="col">
+<div style="border-radius: 1em" class="card border-light mb-3" style="max-width: 20rem;">
+  <div style="border-radius: 11px 11px 0 0" class="card-header">{{ card.friend_name }}</div>
+  <div style="padding: 1.16rem 1.0rem 1.0rem 1.0rem;" class="card-body">
+<p>День рождения: {{ card.birthdate }}</p>
+    <p>Информация: {{ card.info|default_if_none:"не указано" }}</p>
+  </div>
+    <a style="margin-bottom: 1em" href="{% url "cards:edit-card" id=card.id %}">Редактировать</a>
+  <a style="margin-bottom: 2em" href="{% url "cards:delete-card" id=card.id %}">Удалить</a>
+</div>
+</div>
+  {% endfor %}
+{% endblock %}

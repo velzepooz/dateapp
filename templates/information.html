@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Подробнее{% endblock %}
+{% block main %}
+{% load static %}
+<h1>Как это работает?</h1>
+<div class="row" style="padding-top: 1.2em">
+     <div class="col" style="flex-basis: auto;">
+       <p style="text-align: center; font-size: 1.9rem; padding-top: 10px; padding-bottom: 10px;">1. Вноси дни рождения близких людей в приложениe.</p>
+         </div>
+  <div class="col">
+  	<img style="width: 15rem; border: 0.1px solid grey; border-radius: 17px; box-shadow: 0 0 10px rgba(0,0,0,0.5)" src="{% static "img/cards4.jpg" %}"/>
+  </div>
+</div>
+<div class="row" style="padding-top: 1.2em">
+     <div class="col" style="flex-basis: auto;">
+       <p style="text-align: center; font-size: 1.9rem; padding-top: 10px; padding-bottom: 10px;">2. Получай уведомление по почте и в телеграм</p>
+         </div>
+  <div class="col" style="flex-basis: auto;">
+  	<img style="width: 15rem; border: 0.1px solid grey; border-radius: 17px; box-shadow: 0 0 10px rgba(0,0,0,0.5)" src="{% static "img/bot1.jpg" %}"/>
+  </div>
+  <div class="col" style="flex-basis: auto;">
+  	<img style="margin-top: 1.2em;width: 15rem; border: 0.1px solid grey; border-radius: 17px; box-shadow: 0 0 10px rgba(0,0,0,0.5)" src="{% static "img/mail.jpg" %}"/>
+  </div>
+  <div class="col" style="flex-basis: auto; padding-top: 1.2em">
+  	<p>Уведомления будут приходить:</p>
+  <p>- В начале месяца <br>
+  	- В начале недели<br>
+  	- Каждый день
+  </p>
+</div>
+</div>
+<div class="row" style="padding-top: 1.2em">
+     <div class="col" style="flex-basis: auto;">
+       <p style="text-align: center; font-size: 1.9rem; padding-top: 10px; padding-bottom: 10px;">3. Как начать пользоваться приложением?</p>
+       <p>Приложение абсолютно бесплатное и доступно любому у кого есть электронная почта и телеграм.<br>
+       Чтобы начать пользоваться приложением вам нужно зарегистрироваться на сайте и активировать телеграм-бота</p>
+     </div>
+     <div class="col" style="flex-basis: auto;">
+     	<a style="width:140px;height:50px;
+  margin-bottom: 10px; font-size: 19px; padding: 0.8rem 0.5rem;" class="btn btn-success" href="{% url "accounts:register" %}">Регистрация</a>
+     </div>
+</div>
+{% endblock %}

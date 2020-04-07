@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}DATEAPP{% endblock %}
+
+{% block main %}
+<div class="row" style="padding-top: 1.2em">
+     <div class="col">
+  <h1 style="text-align: center; font-weight: bold; font-size:3.3em">Все важные даты у тебя в телефоне</h1>
+       <p style="text-align: center; font-size: 1.4em">Вноси дни рождения близких людей и
+           получай напоминания по почте или в телеграме</p>
+         <div style="margin-top: 30px;">
+             <a style="width:220px;height:55px;
+  margin-bottom: 10px; font-size: 19px; padding: 0.8rem 0.5rem;" class="btn btn-outline-success" href="http://dateapp.fun/information">Подробнее</a>
+             <a style="width:220px;height:55px;
+  margin-bottom: 10px; font-size: 19px; padding: 0.8rem 0.5rem;" class="btn btn-success" href="{% url "accounts:register" %}">Регистрация</a>
+         </div>
+         </div>
+ <div class="col" style="margin-top: 20px">
+<iframe width="250" height="315" src="https://www.youtube.com/embed/cw5GAnGj5Gk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+<div style="margin-top: 50px">
+  <hr>
+  <h3 style="text-align: center; padding-top: 20px;">Контактная информация</h2>
+    <p>Чтобы задать вопрос, высказать пожелание или внести предложение, пишите в телеграм:<br> @glebrulev</p>
+    <hr style="margin-top: 30px">
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block main %}
+  {% block side_bar %}
+{% if user.is_authenticated %}
+
+<div class="side_bar col">
+    <p>Login: {{ user.username }}</p>
+    <a href="{% url "accounts:edit" %}">Добавить инфу</a>
+    <a href="{% url "accounts:password_change" %}">Поменять пароль</a>
+
+</div>
+{% endif %}
+{% endblock %}
+
+{% endblock %}
