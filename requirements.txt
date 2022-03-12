@@ -22,7 +22,7 @@ Jinja2==2.11.1
 kombu==4.6.8
 MarkupSafe==1.1.1
 multidict==4.7.5
-Pillow==7.0.0
+Pillow==9.0.1
 pycparser==2.20
 pytz==2019.3
 PyYAML==5.3.1
